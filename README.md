@@ -139,11 +139,11 @@ Va diagramma avtomatik yaratiladi.
 ## 🛠 Papka tuzilmasi
 
 ```
-project_root/
-├── data/
-│   └── bank.db                # 1 mln yozuvli mock baza
-├── results/                   # Excel natijalar
-├── src/
+project_root/            
+├── src/ 
+│   ├── data/
+│       └─── bank.db
+│   ├── results/               # Excel natijalar
 │   ├── generate_data.py       # Ma’lumotlar yaratish
 │   ├── llm_query_generator.py # LLM -> SQL
 │   ├── run_query.py           # SQL bajarish
