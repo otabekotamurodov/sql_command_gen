@@ -169,10 +169,4 @@ project_root/
 ## 👨‍💻 Mualliflar va aloqa
 
 Loyiha AI Developer Test vazifasi uchun yaratilgan.
-Muallif: **AI Developer Team**
-Aloqa: `support@ai-analyst.local`
-
----
-
-Xohlaysanmi, shu README’ni men hozir `README.md` fayl formatida tayyorlab beray (ya’ni tayyor Markdown versiya qilib beraman)?
-Shunda uni to‘g‘ridan-to‘g‘ri GitHub yoki loyihaning ildiz papkasiga qo‘yish mumkin bo‘ladi.
+Aloqa: `t.me/otabekotamurodov`
