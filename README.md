@@ -1,4 +1,3 @@
-
 # 🧠 AI Data Analyst Assistant
 
 ### Lokal LLM asosida bank ma’lumotlarini tahlil qiluvchi tizim
@@ -11,14 +10,15 @@ Ushbu tizim foydalanuvchining oddiy **tabiiy tildagi so‘rovini** (masalan:
 
 > “2024 yil iyun oyida Toshkentdagi tranzaksiyalar summasini ko‘rsat”)
 
-avtomatik ravishda **SQL so‘rovga** aylantiradi, uni ma’lumotlar bazasida bajaradi va **Excel fayl ko‘rinishida grafik bilan** natija qaytaradi.
+avtomatik ravishda **SQL so‘rovga** aylantiradi, uni ma’lumotlar bazasida bajaradi va **Excel fayl ko‘rinishida grafik
+bilan** natija qaytaradi.
 
 ---
 
 ## ⚙️ Texnologiyalar
 
 | Qism                     | Texnologiya                          |
-| ------------------------ | ------------------------------------ |
+|--------------------------|--------------------------------------|
 | Dasturlash tili          | Python 3.10+                         |
 | LLM modeli               | Gemma3:4b (Ollama orqali)            |
 | Ma’lumotlar bazasi       | SQLite                               |
@@ -89,6 +89,9 @@ Keyin brauzerda oching:
 ## 💬 Foydalanish
 
 1. Web sahifada sizga input maydon chiqadi.
+
+![img.png](img.png)
+
 2. O‘sha joyga tabiiy tildagi savolni yozing, masalan:
 
    ```
@@ -96,14 +99,19 @@ Keyin brauzerda oching:
    ```
 3. “Natija olish” tugmasini bosing.
 4. Tizim avtomatik SQL yaratadi, uni bajaradi va Excel faylni yuklab olish uchun tugma beradi.
+
+![img_1.png](img_1.png)
+
 5. Fayl ichida jadval + grafik mavjud bo‘ladi.
+
+![img_3.png](img_3.png)
 
 ---
 
 ## 🧩 Sinov uchun namunaviy so‘rovlar
 
 | № | So‘rov (Prompt)                                                                   |
-| - | --------------------------------------------------------------------------------- |
+|---|-----------------------------------------------------------------------------------|
 | 1 | 2023 yil davomida har bir viloyat bo‘yicha jami tranzaksiyalar summasini aniqlang |
 | 2 | 2024 yil yanvar oyida debit tranzaksiyalar soni va o‘rtacha summasini ko‘rsating  |
 | 3 | 2023–2024 yillarda kredit va debit hajmlarini choraklar kesimida solishtiring     |
@@ -119,9 +127,9 @@ Keyin brauzerda oching:
 
 * Har bir so‘rovdan so‘ng tizim quyidagilarni hosil qiladi:
 
-  * Avtomatik SQL query
-  * Excel fayl (`results/` papkada saqlanadi)
-  * Grafik (bar/pie/line chart)
+    * Avtomatik SQL query
+    * Excel fayl (`results/` papkada saqlanadi)
+    * Grafik (bar/pie/line chart)
 
 Excel misol:
 
@@ -158,7 +166,7 @@ project_root/
 ## ⚡ Muammolarni yechish
 
 | Muammo                | Sabab / Yechim                                                                                   |
-| --------------------- | ------------------------------------------------------------------------------------------------ |
+|-----------------------|--------------------------------------------------------------------------------------------------|
 | `Ollama topilmadi`    | Ollama dasturi o‘rnatilmagan. [https://ollama.ai](https://ollama.ai) dan yuklab oling.           |
 | `Database topilmadi`  | `generate_data.py` ishlamagan. Avval uni ishga tushiring.                                        |
 | `Bo‘sh DataFrame`     | Siz kiritgan so‘rovga mos ma’lumot topilmadi.                                                    |
